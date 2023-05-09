@@ -57,17 +57,9 @@
 ##### • "Data.txt": This file stores the registered users' data in the format "username:password". Each registered user is stored on a separate line.
 ##### • "tasks.pickle": This file stores the task list using Python's pickle module. It allows the program to load and save the tasks between program runs.
 
-### Future Improvements
 
-#### * Here are some suggestions for future improvements to enhance the functionality of the program:
 
-##### • Implement the "Mark as Done" functionality to allow users to mark tasks as completed.
-##### • Add error handling and input validation to handle incorrect user input gracefully.
-##### • Improve the user interface by adding clearer prompts and instructions.
-##### • Implement user authentication and encryption for better security.
-##### • Allow users to edit task deadlines in addition to task descriptions.
-
-#### Feel free to modify and improve the code according to your needs and requirements.
+###  ➦ Feel free to modify and improve the code according to your needs and requirements.
 
 
 
