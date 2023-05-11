@@ -1,65 +1,62 @@
 # Readme
 
-## This is a simple task management program written in Python. It allows users to register, login, add tasks, remove tasks, display tasks, update tasks, mark tasks as done, save tasks, and exit the program.
+### This program is a simple to-do list manager that allows users to add, remove, update, mark tasks as done, and display tasks. Here's a breakdown of the program's functions:
 
-## Getting Started
+### 1. Login or Register
+#### The program starts by asking the user to login or register. If the user is already registered, they can log in using their username and password. If the user is new, they can register by choosing a username and password. User credentials are stored in a file named "users.txt".
 
-#### * To use this program, follow the instructions below:
+### 2. Add a Task
+#### To add a new task, select option 1 from the menu. You will be prompted to enter the task description and the deadline for the task. The deadline should be entered in the format: "Year-Month-Day Hour:Minute:Second". For example, "2023-05-12 14:30:00".
 
-##### 1. Make sure you have Python installed on your computer.
-##### 2. Download the code file to your local machine or copy the code into a new Python file.
-##### 3. Open a terminal or command prompt and navigate to the directory where the code file is located.
+### 3. Remove a Task
+#### To remove a task, select option 2 from the menu. Enter the description of the task you want to remove.
 
-## Usage
+### 4. Display Tasks
+#### To display all tasks, select option 3 from the menu. The program will show a list of tasks, including their status (done or pending), description, and deadline.
 
-### Register
+### 5. Change a Task
+#### To update an existing task, select option 4 from the menu. Enter the description of the task you want to update, and then enter the new task description.
 
-#### * To register a new user, run the program and enter the following information when prompted:
+### 6. Mark a Task as Done
+#### To mark a task as done, select option 5 from the menu. Enter the description of the task you want to mark as done.
 
-##### • Username: Enter your desired username.
-##### • Create Password: Enter a password for your account.
-##### • Confirm Password: Re-enter the password to confirm.
+### 7. Save and Exit
+#### To save your tasks and exit the program, select option 6 from the menu. The program will save the tasks to a file named "tasks.pickle" and terminate.
 
-#### If the password and confirmation match, your registration will be successful, and the data will be saved in a file named "Data.txt".
+### Note: The program automatically loads the previously saved tasks when started and saves the tasks upon exiting.
 
-### Login
+### Please make sure to enter the input as instructed to ensure the program functions correctly.
 
-##### * To log in as a registered user, run the program and enter your username and password when prompted. The program will check the provided credentials against the registered users' data in the "Data.txt" file. If the credentials match, you will be logged in successfully.
+### Example:
+#### Here's an example interaction with the program:
+```
+Enter 1 to login, 2 to register: 2
+Choose a username: mohamed
+Choose a password: 1234
+Registration successful!
+Welcome, mohamed!
 
-### Add Task
+Choose one:
+1. Add task
+2. Delete task
+3. Display tasks
+4. Change task
+5. Mark as Done
+6. Save and exit
 
-#### * To add a new task, choose option 1 from the menu. Enter the task description and the deadline in the format "Year-Month-Day Hour:Minute:Second" when prompted. The task will be added to the task list.
+Enter your choice: 1
+Add new task: Complete project
+Enter the deadline of the task (Year-Month-Day Hour:Minute:Second): 2023-05-15 10:00:00
+The task: Complete project with deadline: 2023-05-15 10:00:00.
 
-### Delete Task
+Enter your choice: 3
+1 - [ ] Complete project - Deadline: 2023-05-15 10:00:00
 
-#### * To remove a task, choose option 2 from the menu. Enter the task you want to remove when prompted. If a matching task is found in the task list, it will be removed.
+Enter your choice: 6
+Tasks saved. Good luck!
 
-### Display Tasks
+```
 
-#### * To display all the tasks, choose option 3 from the menu. The program will show the task index, description, and deadline for each task in the task list.
-
-### Change Task
-
-#### * To update a task, choose option 4 from the menu. Enter the task you want to update when prompted. If a matching task is found, enter the new task description. The program will update the task with the new description.
-
-### Mark as Done
-
-#### * Option 5 is currently not implemented in the code. You can modify the code and add the functionality to mark tasks as done.
-
-### Save and Exit
-
-#### * To save the tasks and exit the program, choose option 6 from the menu. The program will save the task list in a file named "tasks.pickle" using Python's pickle module. This allows you to load the tasks the next time you run the program.
-
-### Data Persistence
-
-#### * The program uses two files for data persistence:
-
-##### • "Data.txt": This file stores the registered users' data in the format "username:password". Each registered user is stored on a separate line.
-##### • "tasks.pickle": This file stores the task list using Python's pickle module. It allows the program to load and save the tasks between program runs.
-
-
-
-###  ➦ Feel free to modify and improve the code according to your needs and requirements.
 
 
 
